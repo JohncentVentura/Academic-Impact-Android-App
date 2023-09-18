@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="styles-SF.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div id="container">
+        <form action="index-result-SF.html" target="_blank">
+            <label for="text-name">Name:</label>
+            <input id="text-name" name="text-name" type="text" placeholder="Enter your name" required>
+            <label for="email-email">Email:</label>
+            <input id="email-email" name="email-email" type="email" placeholder="email@sample.com" required>
+            <label for="number-age">Age: (Optional)</label>
+            <input id="number-age" name="number-age" type="number" min="1" max="199">
+            <label>Select Course:</label>
+            <select name="select-course" required>
+                <option disabled selected value>(Select Course)</option>
+                <option value="college-of-accoutancy">College of Accoutancy</option>
+                <option value="college-of-business-administration">College of Business Administration</option>
+                <option value="college-of-computer-studies">College of Computer Studies</option>
+                <option value="college-of-criminology">College of Criminology</option>
+                <option value="college-of-cducation">College of Education</option>
+                <option value="college-of-engineering-and-architecture">College of Engineering and Architecture</option>
+                <option value="college-of-liberal-arts">College of Liberal Arts</option>
+                <option value="college-of-medical-technology-pharmacy">College of Medical Technology / Pharmacy</option>
+                <option value="college-of-nursing-midwifery">College of Nursing / Midwifery</option>
+                <option value="college-of-tourism-hospitaliy-management">College of Tourism & Hospitaliy Management
+                </option>
+            </select>
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <label class="label-improve"><input type="checkbox" value="classrooms"> Classrooms</label>
+            <label class="label-improve"><input type="checkbox" value="restrooms"> Restrooms</label>
+            <label class="label-improve"><input type="checkbox" value="canteen-foods"> Canteen & Foods</label>
+            <label class="label-improve"><input type="checkbox" value="faculty"> Faculty</label>
+            <label class="label-improve"><input type="checkbox" value="lessons"> Lessons</label>
+            <label class="label-improve"><input type="checkbox" value="events"> Events</label>
+            <label>What is your favorite part of the university?</label>
+            <select name="select-course" required>
+                <option disabled selected value>(Select Part)</option>
+                <option value="classrooms"> Classrooms</option>
+                <option value="restrooms"> Restrooms</option>
+                <option value="canteen-foods"> Canteen & Foods</option>
+                <option value="faculty"> Faculty</option>
+                <option value="lessons"> Lessons</option>
+                <option value="events"> Events </option>
+                <option value="none"> None </option>
+            </select>
+            <label>Would you recommend the university to someone?</label>
+            <label class="label-radio"><input type="radio" name="radio-recommend"> Yes</label>
+            <label class="label-radio"><input type="radio" name="radio-recommend"> Maybe</label>
+            <label class="label-radio"><input type="radio" name="radio-recommend"> No</label>
+            <label>Any comments or suggestions? </label>
+            <textarea name="textarea" rows="4" placeholder="Enter your comments here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
