@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </header>
-    <div id="container">
-        <form action="index-result-SF.html" target="_blank">
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form action="index-result-SF.html" target="_blank" method="get">
             <label for="text-name">Name:</label>
             <input id="text-name" name="text-name" type="text" placeholder="Enter your name" required>
             <label for="email-email">Email:</label>
@@ -60,7 +60,10 @@
             <label class="label-radio"><input type="radio" name="radio-recommend"> No</label>
             <label>Any comments or suggestions? </label>
             <textarea name="textarea" rows="4" placeholder="Enter your comments here..."></textarea>
-            <button type="submit">Submit</button>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+            
         </form>
     </div>
 </body>

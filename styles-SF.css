@@ -1,5 +1,5 @@
 * {
-   box-sizing: border-box;
+   /*box-sizing: border-box;*/
 }
 
 body {
@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-#container{
+.container{
     font-family: Tahoma;
 }
 
@@ -37,7 +37,7 @@ label{
 }
 
 label, input, select, textarea{
-    font-size: 16px;
+    font-size: 1em;
     padding: 1px 2px;
 }
 
@@ -53,13 +53,21 @@ textarea{
     width: 100%;
 }
 
+.button-container{
+    margin: 30px auto;
+    text-align: center;
+}
+
 button{
-    margin: 40px 0;
-    width: 100%;
-    padding: 0.75rem;
+    height: 50px;
+    width: 250px;
     background-color: #37af65;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     border: none;
     border-radius: 2px;
+}
+
+button:hover{
+    background-color: #63dd82;
 }
