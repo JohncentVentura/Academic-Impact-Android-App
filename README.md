@@ -1,6 +1,4 @@
-# Student Survey Form
-Simple student survery form using HTML & CSS only
-
-# What I learned
-* Using Form, Label, Input and Select elements
-* Fundamentals of CSS
+# FreeCodeCamp - Responsive Web Design
+* Certification Project 1
+* Survey Form
+* Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
