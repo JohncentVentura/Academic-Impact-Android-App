@@ -1,0 +1,153 @@
+:root {
+    --color-darkblue-a: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --font-size-normal: 1.1rem;
+    --font-size-small: 1rem;
+    --font-family-default: 'Poppins', sans-serif;
+    --height-input: 2.4rem;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family-default);
+}
+
+header {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+}
+
+form {
+    border-radius: 4px;
+    padding: 3rem 2.6rem 4rem 2.6rem;
+    width: 46rem;
+    background-color: var(--color-darkblue-a);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label,
+input,
+select,
+textarea {
+    width: 100%;
+    display: block;
+    font-family: var(--font-family-default);
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-default);
+}
+
+label {
+    margin: 0 0 1.5rem 0;
+}
+
+label span {
+    display: block;
+    margin: 0 0 0.4rem 0;
+}
+
+label span sup {
+    margin: 0 0 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    padding: 0.1rem 0 0.1rem 0.5rem;
+    height: var(--height-input);
+}
+
+select {
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 4px;
+    border: none;
+    padding: 0.1rem 0 0.1rem 0.5rem;
+    height: var(--height-input);    
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-default);
+}
+
+option{
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-default);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 0.6rem 0 0;
+    width: 2.5%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.radio-checkbox-label {
+    margin: 0;
+    height: 1.8rem;
+}
+
+.radio-checkbox-label span {
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+div {
+    margin: 2rem 0 0 0;
+}
+
+textarea {
+    margin: 0.5rem 0 0 0;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 0 0.6rem 0.8rem;
+    height: 10rem;
+    font-size: 1rem;
+}
+
+#submit {
+    margin: 2rem 0 0 0;
+    border-style: none;
+    height: 3rem;
+    background-color: var(--color-green);
+    color: white;
+    font-size: var(--font-size-normal);
+    cursor: pointer;
+}
+
+/*@media*/
+@media screen and (max-width: 780px) {
+    form {
+        width: 31rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    form {
+        width: 21rem;
+    }
+}

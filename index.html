@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    <form id="survey-form" action="index.html">
+        <label for="name" id="name-label">
+            <span>Name</span>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label">
+            <span>Email</span>
+            <input id="email" type="email" placeholder="Enter your email"required>
+        </label>
+        <label for="number" id="number-label">
+            <span>Age<sup>(optional)</sup></span>
+            <input id="number" type="number" placeholder="Age" min="18" max="200">
+        </label>
+        <span>Status</span>
+        <select id="dropdown">
+            <option>Student</option>
+            <option>Employee</option>
+        </select>
+        <div>Status</div>
+        <label class="radio-checkbox-label">
+            <input type="radio" name="radios" value="Beginner">
+            <span>Beginner</span>
+        </label>
+        <label class="radio-checkbox-label">
+            <input type="radio" name="radios" value="Pro">
+            <span>Pro</span>
+        </label>
+        <div>Are you sure?</div>
+        <label class="radio-checkbox-label">
+            <input type="checkbox" value="sure" required>
+            <span>I'm sure</span>
+        </label>
+        <label class="radio-checkbox-label">
+            <input type="checkbox" value="ready" required>
+            <span>And I'm ready</span>
+        </label>
+        <div>Any Comments?</div>
+        <textarea row="6" cols="12" placeholder="Enter your comment here..."></textarea>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
