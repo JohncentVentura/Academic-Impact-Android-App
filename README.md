@@ -1,9 +1,4 @@
-# FreeCodeCamp - Responsive Web Design
-* Certification Project 1 - Survey Form
-* Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
-
-# What I Learned
-* Basics of HTML & CSS
-* Basics of HTML Forms
-* Basics of CSS Colors
-* Patched later on to be responsive using @media
+# Academic Impact Android App
+* Developed using Android Studio and written in Java
+* An application for academic purposes that lets both students and teachers record data
+* Unfortunately, the app was corrupted for unknown reason, investigation is on the way...
